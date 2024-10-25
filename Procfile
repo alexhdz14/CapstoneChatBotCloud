@@ -1,2 +1,1 @@
-web: gunicorn app:app
-web: node index.js
+web: gunicorn --bind 0.0.0.0:$PORT flaskapp:app
